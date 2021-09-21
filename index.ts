@@ -1,7 +1,7 @@
-// Crie, em TypeScript, uma interface chamada UserProps, que conterá as propriedades firtsName,lastName, username, email, password, cpf, contacto e isAdmin. Após criar a interface, crie uma classe User implementando essa interface. Faça os métodos getter e setter de cada propriedade.
+// Crie, em TypeScript, uma interface chamada UserProps, que conterá as propriedades fristName,lastName, username, email, password, cpf, contacto e isAdmin. Após criar a interface, crie uma classe User implementando essa interface. Faça os métodos getter e setter de cada propriedade.
 
 interface UserProps {
-    firtsName: string
+    fristName: string
     lastName: string
     username: string
     email: string
@@ -12,7 +12,7 @@ interface UserProps {
 }
 
 class User implements UserProps {
-    firtsName!: string
+    fristName!: string
     lastName!: string
     username!: string
     email!: string
@@ -22,7 +22,7 @@ class User implements UserProps {
     isAdmin!: boolean
 
     constructor(
-        firtsName: string,
+        fristName: string,
         lastName: string,
         username: string,
         email: string,
@@ -31,7 +31,7 @@ class User implements UserProps {
         contacto: string,
         isAdmin: boolean
     ) {
-        this.firtsName = firtsName;
+        this.fristName = fristName;
         this.lastName = lastName;
         this.username = username;
         this.email = email;
@@ -43,7 +43,7 @@ class User implements UserProps {
     };
 
     escreverPropriedades() {
-        console.log(this.firtsName);
+        console.log(this.fristName);
         console.log(this.lastName);
         console.log(this.username);
         console.log(this.email);
@@ -54,12 +54,12 @@ class User implements UserProps {
 
     };
 
-    getFirtsName() {
-        return this.firtsName;
+    getFristName() {
+        return this.fristName;
     }
 
-    setFirtsName(firtsName: string) {
-        this.firtsName = firtsName;
+    setFristName(fristName: string) {
+        this.fristName = fristName;
     }
 
     getLastName() {
@@ -74,8 +74,8 @@ class User implements UserProps {
         return this.username;
     }
 
-    setUserName(UserName: string) {
-        this.UserName = UserName;
+    setUserName(username: string) {
+        this.username = username;
     }
 
     getEmail() {
